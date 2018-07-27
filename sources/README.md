@@ -20,3 +20,4 @@ where {
 }
 GROUP BY ?street ?straatnaam
 ```
+Expectations are the BAG construction years will be especially useful to date more recent streets that lack raadsbesluiten.
