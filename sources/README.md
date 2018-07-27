@@ -4,7 +4,7 @@
 
 The Basisadministratie Adressen en Gebouwen (BAG) contains every building in the Netherlands. The construction dates of buildings are not always very thrustworthy - lots of buildings are said to be built in 1005, meaning, I guess, something like "probably rather old".
 
-The BAG can be accessed through a [SPARQL endpoint](https://data.pdok.nl/sparql#), in which we used the following query:
+The BAG can be accessed through a [SPARQL endpoint](https://data.pdok.nl/sparql#), in which we used the following query to extract the [oldest building of each street](BAG-oldest-building-of-street.csv):
 
 ```
 PREFIX bag: <http://bag.basisregistraties.overheid.nl/def/bag#>
