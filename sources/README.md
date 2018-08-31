@@ -33,7 +33,7 @@ Coming soon.
 
 # Maps
 
-When a street appears on a map, and it's not a planners map, we can safely assume the street existed when the map was created.
+When a street appears on a map (and it's not a planners map) we can safely assume the street existed when the map was created.
 
 ## Jodocus Hondius Map 1612
 
