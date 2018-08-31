@@ -30,3 +30,15 @@ Coming soon.
 ## Transportakten
 
 Coming soon.
+
+# Maps
+
+When a street appears on a map, and it's not a planners map, we can safely assume the street existed when the map was created.
+
+## Jodocus Hondius Map 1612
+
+[The Hondius Map](https://beeldbank.amsterdam.nl/afbeelding/010001000605) lacks the accuracy of other maps, but names all the 'paden' (paths) outside the city walls that disappeared shortly after with the expansions of the city.
+
+The file [map-hondius-1612.csv](map-hondius-1612.csv) lists all the streetnames on the map and identifies them with an Adamlink URI.
+
+
