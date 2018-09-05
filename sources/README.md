@@ -25,7 +25,7 @@ Expectations are the BAG construction years will be especially useful to date mo
 
 ## Raadsbesluiten
 
-Coming soon.
+The raadsbesluiten where originally collected for *Martha Bakker (red.)*, __Stadsatlas Amsterdam - Stadskaarten & Straatnamen verklaard, 1998__. The data were updated for a reprint in 2006. In [raadsbesluiten.csv](raadsbesluiten.csv) years are extracted from the original text and URIs are added.
 
 ## Transportakten
 
