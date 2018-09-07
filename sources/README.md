@@ -31,9 +31,9 @@ The raadsbesluiten where originally collected for *Martha Bakker (red.)*, __Stad
 
 Coming soon.
 
-## Polygons City 'Uitleggen' or Expansions
+## Streets within 'Uitleggen' or Expansions
 
-We know (roughly) when different parts of the city were built. Most famous is perhaps the 'Derde Uitleg', in which the first part of the 'grachtengordel' and the Jordaan were developed. (This 1882 map showing the different expansions)[https://beeldbank.amsterdam.nl/afbeelding/D10098000073] was a big help. So was the (Amsterdam Museum Groeikaart)[https://hart.amsterdam/image/2017/5/17/2013_groeikaart_amsterdam_1000_2000.pdf].
+We know (roughly) when different parts of the city were built. Most famous is perhaps the 'Derde Uitleg', in which the first part of the 'grachtengordel' and the Jordaan were developed. [This 1882 map showing the different expansions](https://beeldbank.amsterdam.nl/afbeelding/D10098000073) was a big help. So was the [Amsterdam Museum Groeikaart](https://hart.amsterdam/image/2017/5/17/2013_groeikaart_amsterdam_1000_2000.pdf).
 
 I (vectorised)[stadsuitbreidingen.geojson] these cityparts, so I could easily select the 1100+ streets within these parts and mark them accordingly. The results are in [straten-stadsuitbreidingen.csv](straten-stadsuitbreidingen.csv).
 
