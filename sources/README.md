@@ -4,7 +4,7 @@
 
 The Basisadministratie Adressen en Gebouwen (BAG) contains every building in the Netherlands. The construction dates of buildings are not always very thrustworthy - lots of buildings are said to be built in 1005, meaning, I guess, something like "probably rather old".
 
-The BAG can be accessed through a [SPARQL endpoint](https://data.pdok.nl/sparql#), in which we used the following query to extract the [oldest building of each street](BAG-oldest-building-of-street.csv):
+The BAG can be accessed through a [SPARQL endpoint](https://data.pdok.nl/sparql#), in which I used the following query to extract the [oldest building of each street](BAG-oldest-building-of-street.csv):
 
 ```
 PREFIX bag: <http://bag.basisregistraties.overheid.nl/def/bag#>
@@ -30,6 +30,14 @@ The raadsbesluiten where originally collected for *Martha Bakker (red.)*, __Stad
 ## Transportakten
 
 Coming soon.
+
+## Polygons City 'Uitleggen' or Expansions
+
+We know (roughly) when different parts of the city were built. Most famous is perhaps the 'Derde Uitleg', in which the first part of the 'grachtengordel' and the Jordaan were developed. (This 1882 map showing the different expansions)[https://beeldbank.amsterdam.nl/afbeelding/D10098000073] was a big help. So was the (Amsterdam Museum Groeikaart)[https://hart.amsterdam/image/2017/5/17/2013_groeikaart_amsterdam_1000_2000.pdf].
+
+I (vectorised)[stadsuitbreidingen.geojson] these cityparts, so I could easily select the 1100+ streets within these parts and mark them accordingly. The results are in [straten-stadsuitbreidingen.csv](straten-stadsuitbreidingen.csv).
+
+Please note that this approach on itself gives clues, not facts. The [Regulierspad](https://adamlink.nl/geo/street/regulierspad/6962) *disappeared* with the 'Vierde Uitleg', the [Pentagon](https://adamlink.nl/geo/street/pentagon/3514) was built in the 1980's.
 
 # Maps
 
