@@ -56,8 +56,6 @@ The file [map-hondius-1612.csv](map-hondius-1612.csv) lists all the streetnames 
 
 - [map-berckenrode-1625-nieuwezijds.csv](map-berckenrode-1625-nieuwezijds.csv) lists the streetnames on the 'Nieuwe Sijde' (the New Side, or leftbank) of town.
 - [map-berckenrode-1625-oudezijds.csv](map-berckenrode-1625-oudezijds.csv) lists the streetnames on the 'Oude Sijde' (the Old Side, or rightbank) of town.
-- The streetnames on the map are gathered now, coming soon!
-
-The file [map-hondius-1612.csv](map-hondius-1612.csv) lists all the streetnames on the map and identifies them with an Adamlink URI.
+- The streetnames on the map are coming soon!
 
 
