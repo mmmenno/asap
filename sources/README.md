@@ -50,3 +50,14 @@ When a street appears on a map (and it's not a planners map) we can safely assum
 The file [map-hondius-1612.csv](map-hondius-1612.csv) lists all the streetnames on the map and identifies them with an Adamlink URI.
 
 
+## Berckenrode Map 1625
+
+[The Berckenrode Map](https://beeldbank.amsterdam.nl/afbeelding/010035000349) is probably the most detailed 17th-century map of the city, made just after the 'Derde Uitleg', in which the western part of the Grachtengordel and the Jordaan where created.
+
+- [map-berckenrode-1625-nieuwezijds.csv](map-berckenrode-1625-nieuwezijds.csv) lists the streetnames on the 'Nieuwe Sijde' (the New Side, or leftbank) of town.
+- [map-berckenrode-1625-nieuwezijds.csv](map-berckenrode-1625-nieuwezijds.csv) lists the streetnames on the 'Oude Sijde' (the Old Side, or rightbank) of town.
+- The streetnames on the map are gathered now, coming soon!
+
+The file [map-hondius-1612.csv](map-hondius-1612.csv) lists all the streetnames on the map and identifies them with an Adamlink URI.
+
+
