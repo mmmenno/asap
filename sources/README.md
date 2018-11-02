@@ -58,4 +58,10 @@ The file [map-hondius-1612.csv](map-hondius-1612.csv) lists all the streetnames 
 - [map-berckenrode-1625-oudezijds.csv](map-berckenrode-1625-oudezijds.csv) lists the streetnames on the 'Oude Sijde' (the Old Side, or rightbank) of town.
 - [map-berckenrode-1625-names-on-map.csv](map-berckenrode-1625-names-on-map.csv) lists most of the names (we might have missed some) on the map itself.
 
+## Ram Map 1692 
+
+On the [Ram Map](https://beeldbank.amsterdam.nl/afbeelding/KOKA00098000001) the expansions (4e Uitleg 1658-1662) from the Leidsegracht to and across the Amstel are visible. 
+
+The file [map-ram-1692.csv](map-ram-1692.csv) lists all the streetnames on the map and identifies them with an Adamlink URI.
+
 
