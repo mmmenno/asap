@@ -66,7 +66,7 @@ The file [map-ram-1692.csv](map-ram-1692.csv) lists all the streetnames on the m
 
 ## Loman Buurtkaarten 1876
 
-The Buurtkaarten (neighborhood maps) can be seen on [tiles.amsterdamtimemachine.nl](https://tiles.amsterdamtimemachine.nl/#16/52.3691/4.8935).
+The Buurtkaarten (neighborhood maps) can be seen on [tiles.amsterdamtimemachine.nl](https://tiles.amsterdamtimemachine.nl/#16/52.3691/4.8935) or in the [City Archives Beeldbank](https://beeldbank.amsterdam.nl/) (search for 'Loman').
 
 The file [map-loman-1876.csv](map-loman-1876.csv) lists the streetnames on the maps and identifies them with an Adamlink URI. Please note that the names of gangen are not included in this file!
 
