@@ -64,6 +64,12 @@ On the [Ram Map](https://beeldbank.amsterdam.nl/afbeelding/KOKA00098000001) the 
 
 The file [map-ram-1692.csv](map-ram-1692.csv) lists all the streetnames on the map and identifies them with an Adamlink URI.
 
+## Loman Buurtkaarten 1876
+
+The Buurtkaarten (neighborhood maps) can be seen on [tiles.amsterdamtimemachine.nl](https://tiles.amsterdamtimemachine.nl/#16/52.3691/4.8935).
+
+The file [map-loman-1876.csv](map-loman-1876.csv) lists the streetnames on the maps and identifies them with an Adamlink URI. Please note that the names of gangen are not included in this file!
+
 ## Presence on Maps
 
 The map data above helps to make a [list of al the maps a street is or is not depicted on](present-on-maps.csv). For every named gang in the Jordaan on Loman I manually checked the last map it was depicted on and the first map it was not.
