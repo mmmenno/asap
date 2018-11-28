@@ -3,15 +3,15 @@
 // should contain your db credentials
 include("settings.php");
 
-$run = false;
-
 $sql = "CREATE TABLE IF NOT EXISTS `asap_years` (
           `id` int(11) NOT NULL AUTO_INCREMENT,
           `street_uri` varchar(255) NOT NULL,
           `earliest_bag_building_year` int(11) NOT NULL,
           `raadsbesluit_year` int(11) NOT NULL,
           `uitleg_year` int(11) NOT NULL,
+          `not_yet_on_map_year` int(11) NOT NULL,
           `first_map_year` int(11) NOT NULL,
+          `last_map_year` int(11) NOT NULL,
           `first_gone_from_map_year` int(11) NOT NULL,
           `first_transportakte_year` int(11) NOT NULL,
           `last_transportakte_year` int(11) NOT NULL,
@@ -20,6 +20,89 @@ $sql = "CREATE TABLE IF NOT EXISTS `asap_years` (
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8;";
 
 $result = $mysqli->query($sql);
+
+
+
+
+// MAP PRESENCE YEARS
+
+echo "\n\ninsert map presence years";
+$i=0;
+$cols = array();
+if (($handle = fopen("../sources/present-on-maps.csv", "r")) !== FALSE) {
+    while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+
+        $i++;
+        if($i==1){
+            foreach ($data as $k => $v) {
+                preg_match("/[0-9]{4}/",$v,$found);
+                if($found){
+                    $cols[$k] = $found[0];
+                }
+            }
+        }
+
+        $yearspresent = array();
+        $yearsabsent = array();
+        foreach ($data as $k => $v) {
+            if(array_key_exists($k, $cols)){
+                if($v=="yes"){
+                    $yearspresent[] = $cols[$k];
+                }
+                if($v=="no"){
+                    $yearsabsent[] = $cols[$k];
+                }
+            }
+        }
+
+        if(count($yearspresent)){
+            $first_map_year = min($yearspresent);
+            $last_map_year = max($yearspresent);
+          
+            if($check = streetUriPresent($data[0])){
+                $sql = "update asap_years 
+                        set first_map_year = " . $first_map_year . ",
+                        last_map_year = " . $last_map_year . " 
+                        where street_uri = '" . $data[0] . "'";
+                $result = $mysqli->query($sql);
+                echo " .";
+                //echo $sql . "\n";
+            }
+        }
+
+
+
+        if(count($yearsabsent) && count($yearspresent)){
+            
+            asort($yearsabsent,SORT_NUMERIC);
+            $not_yet_on_map_year = 0;
+            foreach ($yearsabsent as $k => $v) {
+                if($v < $first_map_year){
+                    $not_yet_on_map_year = $v;
+                }
+            }
+            
+            arsort($yearsabsent,SORT_NUMERIC);
+            $first_gone_from_map_year = 0;
+            foreach ($yearsabsent as $k => $v) {
+                if($v > $last_map_year){
+                    $first_gone_from_map_year = $v;
+                }
+            }
+          
+            if($check = streetUriPresent($data[0])){
+                $sql = "update asap_years 
+                        set not_yet_on_map_year = " . $not_yet_on_map_year . ",
+                        first_gone_from_map_year = " . $first_gone_from_map_year . "
+                        where street_uri = '" . $data[0] . "'";
+                $result = $mysqli->query($sql);
+                echo " .";
+                //echo $sql . "\n";
+            }
+        }
+    }
+    fclose($handle);
+}
 
 
 // UITLEGGEN
