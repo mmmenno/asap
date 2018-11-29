@@ -65,6 +65,9 @@ while($row = $result->fetch_assoc()){
     }else{
         echo $s . ";\n\n";
     }
+
+
+    
     
 
     $s = "update adamnet_straten.streets set until_min = " . $umi . ", until_max = " . $uma . "
